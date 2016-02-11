@@ -1,6 +1,6 @@
 /*!
  * Datepicker for Bootstrap v1.6.0-alpha (https://github.com/eternicode/bootstrap-datepicker)
- *
+ * modified... v1.6.0
  * Copyright 2012 Stefan Petre
  * Improvements by Andrew Rowls
  * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
@@ -2093,7 +2093,7 @@
 
 	/* DATEPICKER VERSION
 	 * =================== */
-	$.fn.datepicker.version = '1.6.0-alpha';
+	$.fn.datepicker.version = '1.6.0';
 
 	/* DATEPICKER DATA-API
 	* ================== */
