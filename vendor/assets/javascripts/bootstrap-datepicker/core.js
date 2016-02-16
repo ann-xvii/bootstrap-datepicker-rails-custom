@@ -2074,8 +2074,9 @@
 	};
 	DPGlobal.template = '<div class="datepicker">'+
 							'<div class="datepicker-days">'+
-								'<div class="calendar-div" style="border: 1px solid #94a0b6">'+
-									'<table class=" table-condensed" style="display: inline-block;">'+
+								'<div class="calendar-div">'+
+									'<p class="date-text" style="position: relative;"><span>Start Date</span><span style="position: relative; right: 0;">End Date</span></p>'+
+									'<table class=" table-condensed" style="display: inline-block; border: 1px solid #94a0b6;">'+
 										DPGlobal.headTemplate+
 										'<tbody></tbody>'+
 										DPGlobal.footTemplate+

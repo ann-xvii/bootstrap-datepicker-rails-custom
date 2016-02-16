@@ -102,7 +102,7 @@
 .datepicker table tr td.day.focused {
   //background: #eeeeee;
   background: transparent;
-  border: 1px solid #31beeb;
+  //border: 1px solid #31beeb;
   border-radius: 100%;
   cursor: pointer;
 }
@@ -313,7 +313,7 @@
 .datepicker table tr td.active.disabled[disabled],
 .datepicker table tr td.active.disabled:hover[disabled] {
   /*background-color: #31beeb;*/
-  border: 1px solid #31beeb;
+  //border: 1px solid #31beeb;
   border-radius: 20px;
 }
 .datepicker table tr td.active:active,
@@ -403,6 +403,7 @@
 .datepicker .next,
 .datepicker tfoot tr th {
   cursor: pointer;
+  color: #94a0b6;
 }
 .datepicker .datepicker-switch:hover,
 .datepicker .prev:hover,
@@ -516,6 +517,10 @@
 .table-condensed > tfoot > tr > td {
   // shrink cells
   padding: 2px 5px;
+
+  &.dow {
+    color: #94a0b6;
+  }
 }
 
 button {
@@ -537,6 +542,12 @@ button {
 .calendar-div {
   display: inline-block;
   background-color: #ffffff;
+
+  .date-text {
+    background-color: #f6f6f9;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
 }
 //user agent stylesheetinput, textarea, keygen, select, button {
 //  text-rendering: auto;
