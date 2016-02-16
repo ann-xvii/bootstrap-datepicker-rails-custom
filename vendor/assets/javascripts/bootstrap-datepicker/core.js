@@ -1799,7 +1799,10 @@
 			months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
 			monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
 			today: "Today",
-			clear: "Clear",
+			clear: "Cancel",
+			setWeekIris: "Week",
+			setMonthIris: "Month",
+			setCustomIris: "Custom",
 			titleFormat: "MM yyyy"
 		}
 	};
@@ -1833,6 +1836,33 @@
 		}],
 		isLeapYear: function(year){
 			return (((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0));
+		},
+		setWeekFunction: function(){
+			console.log('Set week function has been clicked');
+			// read current date as start date
+			// set current date -7d as end date
+			// apply CSS to shade dates correctly
+		},
+		setMonthFunction: function(){
+			console.log('Month function clicked!');
+			// read current date
+			// select all days from current date month until current date
+			// apply CSS to shade dates correctly
+		},
+		setCustomFunction: function(){
+			console.log('Custom function clicked!');
+			// read input start date
+			// read input end date
+			// apply CSS to selected dates
+		},
+		clearCalendar: function() {
+		// call clear calendar function of datepicker methods
+
+			console.log('Clear calendar button clicked!');
+		},
+		applyChangesFunction: function() {
+		// refreshInsights({'start_date':e.format('yyyy-mm-dd'), 'end_date':e.format('yyyy-mm-dd')}, refresh_graphs);
+			console.log('Apply changes button clicked!');
 		},
 		getDaysInMonth: function(year, month){
 			return [31, (DPGlobal.isLeapYear(year) ? 29 : 28), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][month];
@@ -2044,20 +2074,24 @@
 	};
 	DPGlobal.template = '<div class="datepicker">'+
 							'<div class="datepicker-days">'+
-								'<table class=" table-condensed" style="display: inline-block;">'+
-									DPGlobal.headTemplate+
-									'<tbody></tbody>'+
-									DPGlobal.footTemplate+
-								'</table>'+
+								'<div class="calendar-div" style="border: 1px solid #94a0b6">'+
+									'<table class=" table-condensed" style="display: inline-block;">'+
+										DPGlobal.headTemplate+
+										'<tbody></tbody>'+
+										DPGlobal.footTemplate+
+									'</table>'+
+								'</div>' +
 								'<div class="custom-datepicker-panel">'+
+									'<p>Date Range</p>'+
 									'<div class="datepicker-buttons">'+
-										'<button>Week</button>'+
-										'<button>Month</button>'+
-										'<button>Custom</button>'+
+										'<button type="button" id="week-button" class="btn btn-primary">Week</button>'+
+										'<button type="button" id="month-button" class="btn btn-primary">Month</button>'+
+										'<button type="button" id="custom-range-button" class="btn btn-primary">Custom</button>'+
+										'<p class="instruction-text">Select start date and end date of the range you would like to evaluate</p>'+
 									'</div>'+
 									'<div>'+
-										'<button>Cancel</button>'+
-										'<button>Apply</button>'+
+										'<button type="button" id="clear-button" class="btn btn-primary">Cancel</button>'+
+										'<button type="button" id="apply-button" class="btn btn-primary">Apply</button>'+
 									'</div>'+
 								'</div>'+
 							'</div>'+
