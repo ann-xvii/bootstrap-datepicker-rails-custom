@@ -541,7 +541,12 @@ button {
 
 .calendar-div {
   display: inline-block;
-  background-color: #ffffff;
+
+  .table-condensed {
+    background-color: #fff;
+    display: inline-block;
+    border: 1px solid #94a0b6;
+  }
 
   .date-text {
     background-color: #f6f6f9;
