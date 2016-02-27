@@ -552,7 +552,7 @@ button {
   border: 1px solid #94a0b6;
 }
 
-.datepicker-days .calendar-div .table-condensed td:not(.disabled) {
+.datepicker-days .calendar-div .table-condensed td:not(.disabled):not(.selected) {
   &:hover {
     background-color: #eaf8fd;
     border-radius: 4px;
