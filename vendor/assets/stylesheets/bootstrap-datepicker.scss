@@ -101,7 +101,7 @@
   //background: #eeeeee;
   background: transparent;
   //border: 1px solid #31beeb;
-  border-radius: 100%;
+  //border-radius: 100%;
   cursor: pointer;
 }
 .datepicker table tr td.old,
@@ -310,7 +310,8 @@
 .datepicker table tr td.active:hover[disabled],
 .datepicker table tr td.active.disabled[disabled],
 .datepicker table tr td.active.disabled:hover[disabled] {
-  /*background-color: #31beeb;*/
+  background-color: #31beeb;
+  color: #ffffff;
   //border: 1px solid #31beeb;
   border-radius: 4px;
 }

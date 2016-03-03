@@ -2091,7 +2091,7 @@
 										'<p class="instruction-text">Select start date and end date of the range you would like to evaluate</p>'+
 									'</div>'+
 									'<div>'+
-										'<button type="button" id="clear-button" class="btn btn-primary">Cancel</button>'+
+										'<button type="button" id="clear-button" class="btn btn-primary">Clear</button>'+
 										'<button type="button" id="apply-button" class="btn btn-primary">Apply</button>'+
 									'</div>'+
 								'</div>'+
